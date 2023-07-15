@@ -26,7 +26,8 @@ The losses observed were:
 
 The outputs of the generator after epochs  (1, 2, 4, 10, 50, 100)
 
-![image](https://github.com/psvkaushik/GANs/assets/86014345/2538592b-7bf8-4635-b9f1-e102c68156b5)
+![image](https://github.com/psvkaushik/GANs/assets/86014345/cbe8001f-e202-4fb5-be17-dfc7bf400a12)
+
 
 
 ## DCGAN
