@@ -12,9 +12,11 @@ The first implemented architecture is the VanillaGAN whose Generator and Discrim
 ### Architectures of VanillaGAN
 
 The generator architecture is:
+
 ![image](https://github.com/psvkaushik/GANs/assets/86014345/748168dd-93e0-4d63-acd9-b7798f74bcbc)
 
 The discriminator architecture is:
+
 ![image](https://github.com/psvkaushik/GANs/assets/86014345/7f1337c5-44d4-4104-aac9-8c98cbc89fcb)
 
 The Loss Function used to optimize both the generator and discriminator is taken from the [original GAN paper](https://arxiv.org/pdf/1406.2661.pdf) by I.GoodFellow which is: ![image](https://github.com/psvkaushik/GANs/assets/86014345/19e4f266-b643-45a2-a753-9cf946030541)
