@@ -33,7 +33,25 @@ The outputs of the generator after epochs  (1, 2, 4, 10, 50, 100)
 
 
 ## DCGAN
-*In Progress*
+
+For the DCGAN, the architectures of the generator and the discriminator followed was similar to the ones mention in the [paper](https://arxiv.org/pdf/1511.06434v2.pdf) by Alec Radford, et al. This is GAN based on deep convolution neural networks. The dataset used was the same MNIST dataset used for developing the VanillaGAN in the previous section. The loss function to be optimized was also the same two player mini-max game.
+
+### Architecture of the DCGAN
+
+The architecture of the generator used
+
+![image](https://github.com/psvkaushik/GANs/assets/86014345/e78fd65f-ae43-4aa0-81bb-0bf144d8085b)
+
+The architecture of the discriminator used 
+
+![image](https://github.com/psvkaushik/GANs/assets/86014345/cbb8994b-5a13-45d5-9c52-681e094c551c)
+
+The outputs of the generator after epochs  (1, 2, 4, 10, 50, 100)
+
+![image](https://github.com/psvkaushik/GANs/assets/86014345/ac0adc6b-455d-4d83-a391-45cf3779216d)
+
+Compared to VanillaGAN, by visual inspection the images generated seem better. But we can observe the number 7, has appeared twice out of the given five samples. While this might not mean much, it may also be an indicator of one of the main problems in using the aforementioned loss function in GANs, which is "Mode Collapse". 
+The next GAN model(*WGAN*) will be trained using the Wasserstein Loss and Gradient Penalty.
 
 ## WGAN
 *In Progress*
