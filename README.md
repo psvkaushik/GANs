@@ -1,9 +1,9 @@
 # GANs
 
 This repository consists of code for implementations of three different GAN arctitectures, and this readme consists of the results observed for each implmentation.
-* [VanillaGAN](## VanillaGAN)
-* [DCGAN](## DCGAN)
-* [WGAN](## WGAN)
+* [VanillaGAN](##VanillaGAN)
+* [DCGAN](##DCGAN)
+* [WGAN](##WGAN)
 
 ## VanillaGAN
 
@@ -54,7 +54,23 @@ Compared to VanillaGAN, by visual inspection the images generated seem better. B
 The next GAN model(*WGAN*) will be trained using the Wasserstein Loss and Gradient Penalty.
 
 ## WGAN
-*In Progress*
+
+The architecture used was same as the ones used in DCGAN, with only change was instead of batch normalization, layer normalization was implemented after each layer to prevent internal covariate shift. 
+The loss function used here was the wasserstein loss based on the Earth-Mover's Distance. The loss for the discriminator is represented as shown below :
+
+![image](https://github.com/psvkaushik/GANs/assets/86014345/1806ac59-693a-4968-a7ab-1707a471ba6d)
+
+The additioinal gradient penalty is to make sure the weights follow 1-Lipschitz criteria:
+
+![image](https://github.com/psvkaushik/GANs/assets/86014345/36469181-df57-4fc8-b37a-6c0ce7b452ce)
+
+
+The outputs of the generator trained against a WGAN with Gradient Penalty after epochs  (1, 2, 4, 10, 50):
+
+![image](https://github.com/psvkaushik/GANs/assets/86014345/d7bc3ea2-84fe-4260-8dee-3e25f652961e)
+
+
+
 
 
 
