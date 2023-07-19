@@ -1,9 +1,9 @@
 # GANs
 
 This repository consists of code for implementations of three different GAN arctitectures, and this readme consists of the results observed for each implmentation.
-* [VanillaGAN](##VanillaGAN)
-* [DCGAN](##DCGAN)
-* [WGAN](##WGAN)
+* [VanillaGAN](## VanillaGAN)
+* [DCGAN](## DCGAN)
+* [WGAN](## WGAN)
 
 ## VanillaGAN
 
